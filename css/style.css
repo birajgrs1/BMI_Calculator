@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-family: sans-serif;
+    height: 100vh;
+    background-image: url(/img/YogaGirl.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+div {
+    width: 90%;
+    max-width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    box-shadow: 2px 2px 20px #919191;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 650;
+    color: #fff;
+}
+
+.text {
+    text-align: left;
+    margin-left: 0;
+    color: #fff;
+}
+
+#weight, #height {
+    color: #fff;
+    text-align: left;
+    font-size: 24px;
+    font-weight: 220;
+    border: 1px solid #fff;
+    width: calc(100% - 40px);
+    max-width: 300px;
+    background-color: transparent;
+    border-radius: 2px;
+    outline: none;
+    margin: 10px 0;
+}
+
+#result {
+    color: #fff;
+}
+
+#btn {
+    font-family: inherit;
+    margin-top: 10px;
+    border: none;
+    color: #828588;
+    width: 150px;
+    padding: 10px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+#btn:hover {
+    box-shadow: 1px 1px 10px #341f97;
+}
+
+#details {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    div {
+        width: 90%;
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    #weight, #height {
+        font-size: 20px;
+        width: calc(100% - 30px);
+    }
+
+    #btn {
+        width: 120px;
+        padding: 8px;
+    }
+
+    #details {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px) {
+    div {
+        width: 95%;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    #weight, #height {
+        font-size: 18px;
+        width: calc(100% - 20px);
+    }
+
+    #btn {
+        width: 100px;
+        padding: 6px;
+    }
+
+    #details {
+        font-size: 12px;
+    }
+}
